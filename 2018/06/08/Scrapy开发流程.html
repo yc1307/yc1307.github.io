@@ -88,7 +88,7 @@
 <meta property="og:description" content="我们来看看下面这张图：  这就是整个Scrapy的架构图了； Scrapy Engine: 这是引擎，负责Spiders、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等等！（像不像人的身体？） Scheduler(调度器): 它负责接受引擎发送过来的requests请求，并按照一定的方式进行整理排列，入队、并等待Scrapy Engine(引擎)来请">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://oku1mq4op.qnssl.com/wp-content/uploads/2016/12/scrapy_architecture.png">
-<meta property="og:updated_time" content="2018-06-08T10:27:36.466Z">
+<meta property="og:updated_time" content="2018-06-08T14:36:27.312Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Scrapy开发流程">
 <meta name="twitter:description" content="我们来看看下面这张图：  这就是整个Scrapy的架构图了； Scrapy Engine: 这是引擎，负责Spiders、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等等！（像不像人的身体？） Scheduler(调度器): 它负责接受引擎发送过来的requests请求，并按照一定的方式进行整理排列，入队、并等待Scrapy Engine(引擎)来请">
@@ -361,7 +361,6 @@
 <p><strong>引擎</strong>：Hi ！<strong>Item Pipeline</strong> 我这儿有个item你帮我处理一下！<strong>调度器！</strong>这是我需要的URL你帮我处理下。然后从第四步开始循环，直到获取到你需要的信息，</p>
 <p>注意！只有当调度器中不存在任何request了，整个程序才会停止，（也就是说，对于下载失败的ＵＲＬ，Scrapy会重新下载。）</p>
 <p>以上就是Scrapy整个流程了。</p>
-<p><a href="www.baidu.com">百度</a></p>
 
       
     </div>
