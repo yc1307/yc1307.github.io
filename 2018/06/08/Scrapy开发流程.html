@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="python," />
+  <meta name="keywords" content="python,爬虫,技术向," />
 
 
 
@@ -80,7 +80,7 @@
 
 
 <meta name="description" content="我们来看看下面这张图：  这就是整个Scrapy的架构图了； Scrapy Engine: 这是引擎，负责Spiders、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等等！（像不像人的身体？） Scheduler(调度器): 它负责接受引擎发送过来的requests请求，并按照一定的方式进行整理排列，入队、并等待Scrapy Engine(引擎)来请">
-<meta name="keywords" content="python">
+<meta name="keywords" content="python,爬虫,技术向">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Scrapy开发流程">
 <meta property="og:url" content="http://yuecong.club/2018/06/08/Scrapy开发流程.html">
@@ -88,7 +88,7 @@
 <meta property="og:description" content="我们来看看下面这张图：  这就是整个Scrapy的架构图了； Scrapy Engine: 这是引擎，负责Spiders、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等等！（像不像人的身体？） Scheduler(调度器): 它负责接受引擎发送过来的requests请求，并按照一定的方式进行整理排列，入队、并等待Scrapy Engine(引擎)来请">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://oku1mq4op.qnssl.com/wp-content/uploads/2016/12/scrapy_architecture.png">
-<meta property="og:updated_time" content="2018-06-08T07:35:10.031Z">
+<meta property="og:updated_time" content="2018-06-08T10:27:36.466Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Scrapy开发流程">
 <meta name="twitter:description" content="我们来看看下面这张图：  这就是整个Scrapy的架构图了； Scrapy Engine: 这是引擎，负责Spiders、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等等！（像不像人的身体？） Scheduler(调度器): 它负责接受引擎发送过来的requests请求，并按照一定的方式进行整理排列，入队、并等待Scrapy Engine(引擎)来请">
@@ -193,16 +193,6 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
@@ -284,7 +274,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-08T15:34:06+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-08T18:22:11+08:00">
                 2018-06-08
               </time>
             
@@ -307,8 +297,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/python/" itemprop="url" rel="index">
-                    <span itemprop="name">python</span>
+                  <a href="/categories/爬虫/" itemprop="url" rel="index">
+                    <span itemprop="name">爬虫</span>
                   </a>
                 </span>
 
@@ -371,6 +361,7 @@
 <p><strong>引擎</strong>：Hi ！<strong>Item Pipeline</strong> 我这儿有个item你帮我处理一下！<strong>调度器！</strong>这是我需要的URL你帮我处理下。然后从第四步开始循环，直到获取到你需要的信息，</p>
 <p>注意！只有当调度器中不存在任何request了，整个程序才会停止，（也就是说，对于下载失败的ＵＲＬ，Scrapy会重新下载。）</p>
 <p>以上就是Scrapy整个流程了。</p>
+<p><a href="www.baidu.com">百度</a></p>
 
       
     </div>
@@ -389,6 +380,10 @@
         <div class="post-tags">
           
             <a href="/tags/python/" rel="tag"># python</a>
+          
+            <a href="/tags/爬虫/" rel="tag"># 爬虫</a>
+          
+            <a href="/tags/技术向/" rel="tag"># 技术向</a>
           
         </div>
       
@@ -491,10 +486,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
+                <a href="/categories/index.html">
                   <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
-                
+                </a>
               </div>
             
 
@@ -502,10 +497,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">2</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -513,6 +508,16 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/yc1307" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -607,6 +612,8 @@
   
 
 
+  
+
 
 
 
@@ -645,6 +652,11 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
